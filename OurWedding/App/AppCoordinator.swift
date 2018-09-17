@@ -1,5 +1,5 @@
 //
-//  LoginCoordinator.swift
+//  AppCoordinator.swift
 //  OurWedding
 //
 //  Created by Jonatha Lima on 17/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct LoginCoordinator: Coordinator {
+struct AppCoordinator: Coordinator {
     
     let window: UIWindow
     
@@ -17,8 +17,8 @@ struct LoginCoordinator: Coordinator {
     }
     
     func start() {
-        window.rootViewController = LoginViewController()
-        window.makeKeyAndVisible()
+        let loginCoordinator = LoginCoordinator(window: window)
+        loginCoordinator.start()
     }
     
 }

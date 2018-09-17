@@ -14,6 +14,8 @@
 		12054A69214F572900174E56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A68214F572900174E56 /* LoginViewController.swift */; };
 		12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6A214F574D00174E56 /* LoginViewScreen.swift */; };
 		12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6C214F575900174E56 /* LoginCoordinator.swift */; };
+		12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6E214F584600174E56 /* AppCoordinator.swift */; };
+		12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A70214F598100174E56 /* CoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		12054A68214F572900174E56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12054A6A214F574D00174E56 /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
 		12054A6C214F575900174E56 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		12054A6E214F584600174E56 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		12054A70214F598100174E56 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				12054A4D214F4E8100174E56 /* Info.plist */,
+				12054A6E214F584600174E56 /* AppCoordinator.swift */,
 				12054A41214F4E7F00174E56 /* AppDelegate.swift */,
+				12054A70214F598100174E56 /* CoordinatorProtocol.swift */,
 				12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -257,6 +263,8 @@
 			files = (
 				12054A69214F572900174E56 /* LoginViewController.swift in Sources */,
 				12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */,
+				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
+				12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */,
 				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
 				12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */,
 			);
