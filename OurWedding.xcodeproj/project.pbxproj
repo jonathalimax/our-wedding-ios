@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A41214F4E7F00174E56 /* AppDelegate.swift */; };
-		12054A44214F4E7F00174E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A43214F4E7F00174E56 /* ViewController.swift */; };
-		12054A47214F4E7F00174E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12054A45214F4E7F00174E56 /* Main.storyboard */; };
 		12054A49214F4E8100174E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12054A48214F4E8100174E56 /* Assets.xcassets */; };
 		12054A4C214F4E8100174E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */; };
 		12054A57214F4E8100174E56 /* OurWeddingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A56214F4E8100174E56 /* OurWeddingUITests.swift */; };
+		12054A69214F572900174E56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A68214F572900174E56 /* LoginViewController.swift */; };
+		12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6A214F574D00174E56 /* LoginViewScreen.swift */; };
+		12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6C214F575900174E56 /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,15 @@
 /* Begin PBXFileReference section */
 		12054A3E214F4E7F00174E56 /* OurWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12054A41214F4E7F00174E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12054A43214F4E7F00174E56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12054A46214F4E7F00174E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12054A48214F4E8100174E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12054A4B214F4E8100174E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12054A4D214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12054A52214F4E8100174E56 /* OurWeddingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurWeddingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12054A56214F4E8100174E56 /* OurWeddingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurWeddingUITests.swift; sourceTree = "<group>"; };
 		12054A58214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12054A68214F572900174E56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		12054A6A214F574D00174E56 /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
+		12054A6C214F575900174E56 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,9 @@
 		12054A40214F4E7F00174E56 /* OurWedding */ = {
 			isa = PBXGroup;
 			children = (
-				12054A41214F4E7F00174E56 /* AppDelegate.swift */,
-				12054A43214F4E7F00174E56 /* ViewController.swift */,
-				12054A45214F4E7F00174E56 /* Main.storyboard */,
-				12054A48214F4E8100174E56 /* Assets.xcassets */,
-				12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */,
-				12054A4D214F4E8100174E56 /* Info.plist */,
+				12054A62214F567400174E56 /* App */,
+				12054A61214F53A700174E56 /* Feature */,
+				12054A63214F569100174E56 /* Resource */,
 			);
 			path = OurWedding;
 			sourceTree = "<group>";
@@ -94,6 +93,66 @@
 				12054A58214F4E8100174E56 /* Info.plist */,
 			);
 			path = OurWeddingUITests;
+			sourceTree = "<group>";
+		};
+		12054A61214F53A700174E56 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				12054A64214F56A600174E56 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		12054A62214F567400174E56 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				12054A4D214F4E8100174E56 /* Info.plist */,
+				12054A41214F4E7F00174E56 /* AppDelegate.swift */,
+				12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		12054A63214F569100174E56 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				12054A48214F4E8100174E56 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		12054A64214F56A600174E56 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				12054A65214F56ED00174E56 /* Controller */,
+				12054A67214F56F700174E56 /* Model */,
+				12054A66214F56F200174E56 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		12054A65214F56ED00174E56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12054A68214F572900174E56 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12054A66214F56F200174E56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12054A6A214F574D00174E56 /* LoginViewScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12054A67214F56F700174E56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12054A6C214F575900174E56 /* LoginCoordinator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +238,6 @@
 			files = (
 				12054A4C214F4E8100174E56 /* LaunchScreen.storyboard in Resources */,
 				12054A49214F4E8100174E56 /* Assets.xcassets in Resources */,
-				12054A47214F4E7F00174E56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12054A44214F4E7F00174E56 /* ViewController.swift in Sources */,
+				12054A69214F572900174E56 /* LoginViewController.swift in Sources */,
+				12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */,
+				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
 				12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +281,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12054A45214F4E7F00174E56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12054A46214F4E7F00174E56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34WA7GG8R;
-				INFOPLIST_FILE = OurWedding/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OurWedding/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34WA7GG8R;
-				INFOPLIST_FILE = OurWedding/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OurWedding/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

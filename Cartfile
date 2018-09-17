@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" ~> 4.7
+github "Alamofire/AlamofireImage" ~> 3.4
+github "Quick/Quick"
+github "Quick/Nimble"
+github "SnapKit/SnapKit" ~> 4.0.0
