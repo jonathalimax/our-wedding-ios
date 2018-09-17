@@ -1,5 +1,6 @@
 github "Alamofire/Alamofire" ~> 4.7
 github "Alamofire/AlamofireImage" ~> 3.4
-github "Quick/Quick"
-github "Quick/Nimble"
 github "SnapKit/SnapKit" ~> 4.0.0
+github "uber/ios-snapshot-test-case" ~> 4.0.0
+github "Quick/Quick" ~> 1.0
+github "Quick/Nimble" ~> 7.0

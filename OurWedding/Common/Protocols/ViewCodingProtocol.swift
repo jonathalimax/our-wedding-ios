@@ -20,6 +20,7 @@ extension ViewCodingProtocol {
     func setupViewCode() {
         addSubviews()
         setupConstraints()
+        setupSubviews()
     }
     
     func setupSubviews() {}

@@ -10,7 +10,6 @@
 		12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A41214F4E7F00174E56 /* AppDelegate.swift */; };
 		12054A49214F4E8100174E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12054A48214F4E8100174E56 /* Assets.xcassets */; };
 		12054A4C214F4E8100174E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */; };
-		12054A57214F4E8100174E56 /* OurWeddingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A56214F4E8100174E56 /* OurWeddingUITests.swift */; };
 		12054A69214F572900174E56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A68214F572900174E56 /* LoginViewController.swift */; };
 		12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6A214F574D00174E56 /* LoginViewScreen.swift */; };
 		12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6C214F575900174E56 /* LoginCoordinator.swift */; };
@@ -18,10 +17,18 @@
 		12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A70214F598100174E56 /* CoordinatorProtocol.swift */; };
 		12054A75214F5C6500174E56 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A74214F5C6500174E56 /* ViewCodingProtocol.swift */; };
 		12054A7C214F5CA800174E56 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A77214F5CA800174E56 /* SnapKit.framework */; };
-		12054A7D214F5CA800174E56 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A78214F5CA800174E56 /* Nimble.framework */; };
 		12054A7E214F5CA800174E56 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A79214F5CA800174E56 /* AlamofireImage.framework */; };
-		12054A7F214F5CA800174E56 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
-		12054A80214F5CA800174E56 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7B214F5CA800174E56 /* Alamofire.framework */; };
+		12054A84214F606A00174E56 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A83214F606A00174E56 /* Resource.swift */; };
+		12054A86214F60ED00174E56 /* Resource+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A85214F60ED00174E56 /* Resource+Image.swift */; };
+		12054A88214F610500174E56 /* Resource+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A87214F610500174E56 /* Resource+Color.swift */; };
+		12054A8A214F610D00174E56 /* Resource+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A89214F610D00174E56 /* Resource+Font.swift */; };
+		12054A8C214F611500174E56 /* Resource+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A8B214F611500174E56 /* Resource+Text.swift */; };
+		12402A08214F67BB00D2EC6B /* LoginViewScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A07214F67BB00D2EC6B /* LoginViewScreenSpec.swift */; };
+		12402A0D214F6BA100D2EC6B /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */; };
+		12402A0E214F6BA100D2EC6B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A78214F5CA800174E56 /* Nimble.framework */; };
+		12402A0F214F6BA100D2EC6B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
+		12402A14214F6EE300D2EC6B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A13214F6EE300D2EC6B /* InputField.swift */; };
+		12402A16214F73C100D2EC6B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A15214F73C100D2EC6B /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +48,6 @@
 		12054A4B214F4E8100174E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12054A4D214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12054A52214F4E8100174E56 /* OurWeddingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurWeddingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12054A56214F4E8100174E56 /* OurWeddingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurWeddingUITests.swift; sourceTree = "<group>"; };
 		12054A58214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12054A68214F572900174E56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12054A6A214F574D00174E56 /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
@@ -54,6 +60,16 @@
 		12054A79214F5CA800174E56 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		12054A7A214F5CA800174E56 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		12054A7B214F5CA800174E56 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		12054A83214F606A00174E56 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		12054A85214F60ED00174E56 /* Resource+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Image.swift"; sourceTree = "<group>"; };
+		12054A87214F610500174E56 /* Resource+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Color.swift"; sourceTree = "<group>"; };
+		12054A89214F610D00174E56 /* Resource+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Font.swift"; sourceTree = "<group>"; };
+		12054A8B214F611500174E56 /* Resource+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Text.swift"; sourceTree = "<group>"; };
+		12402A07214F67BB00D2EC6B /* LoginViewScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreenSpec.swift; sourceTree = "<group>"; };
+		12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		12402A0B214F6B9200D2EC6B /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
+		12402A13214F6EE300D2EC6B /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		12402A15214F73C100D2EC6B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12054A7C214F5CA800174E56 /* SnapKit.framework in Frameworks */,
-				12054A7D214F5CA800174E56 /* Nimble.framework in Frameworks */,
 				12054A7E214F5CA800174E56 /* AlamofireImage.framework in Frameworks */,
-				12054A7F214F5CA800174E56 /* Quick.framework in Frameworks */,
-				12054A80214F5CA800174E56 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12402A0D214F6BA100D2EC6B /* FBSnapshotTestCase.framework in Frameworks */,
+				12402A0E214F6BA100D2EC6B /* Nimble.framework in Frameworks */,
+				12402A0F214F6BA100D2EC6B /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +128,7 @@
 		12054A55214F4E8100174E56 /* OurWeddingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				12054A56214F4E8100174E56 /* OurWeddingUITests.swift */,
+				12402A04214F67A400D2EC6B /* Feature */,
 				12054A58214F4E8100174E56 /* Info.plist */,
 			);
 			path = OurWeddingUITests;
@@ -141,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				12054A48214F4E8100174E56 /* Assets.xcassets */,
+				12402A12214F6EC500D2EC6B /* Component */,
+				12054A82214F605800174E56 /* Guide */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -199,6 +217,8 @@
 		12054A76214F5CA800174E56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12402A0B214F6B9200D2EC6B /* Build */,
+				12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */,
 				12054A7B214F5CA800174E56 /* Alamofire.framework */,
 				12054A79214F5CA800174E56 /* AlamofireImage.framework */,
 				12054A78214F5CA800174E56 /* Nimble.framework */,
@@ -206,6 +226,51 @@
 				12054A77214F5CA800174E56 /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12054A82214F605800174E56 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				12054A83214F606A00174E56 /* Resource.swift */,
+				12054A87214F610500174E56 /* Resource+Color.swift */,
+				12054A89214F610D00174E56 /* Resource+Font.swift */,
+				12054A85214F60ED00174E56 /* Resource+Image.swift */,
+				12054A8B214F611500174E56 /* Resource+Text.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		12402A04214F67A400D2EC6B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				12402A05214F67A900D2EC6B /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		12402A05214F67A900D2EC6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				12402A06214F67AD00D2EC6B /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		12402A06214F67AD00D2EC6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12402A07214F67BB00D2EC6B /* LoginViewScreenSpec.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12402A12214F6EC500D2EC6B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				12402A13214F6EE300D2EC6B /* InputField.swift */,
+				12402A15214F73C100D2EC6B /* Button.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +301,7 @@
 				12054A4E214F4E8100174E56 /* Sources */,
 				12054A4F214F4E8100174E56 /* Frameworks */,
 				12054A50214F4E8100174E56 /* Resources */,
+				12402A10214F6BA500D2EC6B /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -262,6 +328,7 @@
 					};
 					12054A51214F4E8100174E56 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 12054A3D214F4E7F00174E56;
 					};
 				};
@@ -314,8 +381,23 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		12402A10214F6BA500D2EC6B /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -334,10 +416,17 @@
 				12054A69214F572900174E56 /* LoginViewController.swift in Sources */,
 				12054A75214F5C6500174E56 /* ViewCodingProtocol.swift in Sources */,
 				12054A6B214F574D00174E56 /* LoginViewScreen.swift in Sources */,
+				12054A88214F610500174E56 /* Resource+Color.swift in Sources */,
 				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
 				12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */,
+				12054A8C214F611500174E56 /* Resource+Text.swift in Sources */,
+				12402A16214F73C100D2EC6B /* Button.swift in Sources */,
+				12402A14214F6EE300D2EC6B /* InputField.swift in Sources */,
+				12054A86214F60ED00174E56 /* Resource+Image.swift in Sources */,
+				12054A8A214F610D00174E56 /* Resource+Font.swift in Sources */,
 				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
 				12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */,
+				12054A84214F606A00174E56 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12054A57214F4E8100174E56 /* OurWeddingUITests.swift in Sources */,
+				12402A08214F67BB00D2EC6B /* LoginViewScreenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,8 +622,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34WA7GG8R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OurWeddingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +637,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWeddingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OurWedding;
@@ -553,8 +648,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34WA7GG8R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OurWeddingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
