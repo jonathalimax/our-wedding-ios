@@ -1,9 +1,0 @@
-{
-  "commitish" : "4.0.0",
-  "iOS" : [
-    {
-      "name" : "InputMask",
-      "hash" : "914bd7f533b6188810bd786227ca35bca99c0c7772b2f953179f179746cd73d2"
-    }
-  ]
-}
