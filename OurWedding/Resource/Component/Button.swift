@@ -10,7 +10,10 @@ import UIKit
 
 class Button: UIButton {
     
+    let type: Type
+    
     init(type: Type) {
+        self.type = type
         super.init(frame: .zero)
         configure(for: type)
     }
@@ -23,22 +26,46 @@ class Button: UIButton {
         case primary
     }
     
+    override var isHighlighted: Bool {
+        didSet {
+            self.configureHighlighted(for: self.type)
+        }
+    }
+    
 }
 
 private extension Button {
     
     func configure(for type: Type) {
         
+        switch type {
+        case .primary:
+            
+            layer.cornerRadius = 8
+            titleLabel?.font = Resource.Font.SourceSansPro.bold(size: 24)
+            setTitleColor(Resource.Color.black, for: .normal)
+            backgroundColor = Resource.Color.lightGray
+                .withAlphaComponent(0.2)
+            
+        }
+        
         layer.masksToBounds = true
+    }
+    
+    func configureHighlighted(for type: Type) {
+        
+        var normalColor: UIColor = .clear
+        var highlightedColor: UIColor = .clear
         
         switch type {
         case .primary:
-            layer.cornerRadius = 8
-            backgroundColor = Resource.Color.lightGray
-                .withAlphaComponent(0.3)
-            titleLabel?.font = UIFont.systemFont(ofSize: 25)
-            setTitleColor(Resource.Color.black, for: .normal)
+            
+            normalColor = Resource.Color.lightGray.withAlphaComponent(0.2)
+            highlightedColor = Resource.Color.lightGray.withAlphaComponent(0.3)
+            
         }
+        
+        self.backgroundColor = self.isHighlighted ? highlightedColor : normalColor
         
     }
     

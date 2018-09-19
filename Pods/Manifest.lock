@@ -1,0 +1,16 @@
+PODS:
+  - VMaskTextField (1.0.8)
+
+DEPENDENCIES:
+  - VMaskTextField
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VMaskTextField
+
+SPEC CHECKSUMS:
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
+
+PODFILE CHECKSUM: 8469b66c38137c41fcd2788cc9182fb81cd2824b
+
+COCOAPODS: 1.5.3

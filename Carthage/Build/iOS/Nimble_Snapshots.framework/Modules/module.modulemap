@@ -1,0 +1,11 @@
+framework module Nimble_Snapshots {
+  umbrella header "Nimble_Snapshots.h"
+
+  export *
+  module * { export * }
+}
+
+module Nimble_Snapshots.Swift {
+    header "Nimble_Snapshots-Swift.h"
+    requires objc
+}

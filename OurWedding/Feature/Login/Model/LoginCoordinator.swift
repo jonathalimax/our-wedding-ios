@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct LoginCoordinator: Coordinator {
+class LoginCoordinator: Coordinator {
     
     let window: UIWindow
     
@@ -17,8 +17,29 @@ struct LoginCoordinator: Coordinator {
     }
     
     func start() {
-        window.rootViewController = LoginViewController()
+        let loginViewController = LoginViewController()
+        loginViewController.delegate = self
+        window.rootViewController = loginViewController
         window.makeKeyAndVisible()
+    }
+    
+}
+
+extension LoginCoordinator {
+    
+    private func startHomeCoordinator() {
+        let controllers = [UIViewController(), UIViewController(), UIViewController()]
+        let coordinator = HomeCoordinator(window: window,
+                                          controllers: controllers)
+        coordinator.start()
+    }
+    
+}
+
+extension LoginCoordinator: LoginViewControllerDelegate {
+    
+    func loginViewControllerLogInSuccessfully(_ viewController: LoginViewController) {
+        startHomeCoordinator()
     }
     
 }

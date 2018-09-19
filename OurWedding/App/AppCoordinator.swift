@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct AppCoordinator: Coordinator {
+class AppCoordinator: Coordinator {
     
     let window: UIWindow
     

@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import VMaskTextField
 
 class InputField: UIView {
     
-    lazy var field: UITextField = {
-        let textField = UITextField()
+    private let bottomLineColor = Resource.Color.lightGray
+        .withAlphaComponent(0.5)
+    
+    private let bottomLineFocusedColor = Resource.Color.lightGray
+    
+    lazy var field: VMaskTextField = {
+        let textField = VMaskTextField()
         textField.textColor = Resource.Color.black
-        textField.font = UIFont.boldSystemFont(ofSize: 24)
+        textField.font = Resource.Font.SourceSansPro.bold(size: 24)
         return textField
     }()
     
     private lazy var bottomLineView: UIView = {
         let view = UIView()
-        view.backgroundColor = Resource.Color.lightGray
+        view.backgroundColor = bottomLineColor
         return view
     }()
     
@@ -50,7 +56,7 @@ extension InputField: ViewCodingProtocol {
         }
         
         bottomLineView.snp.makeConstraints { make in
-            make.height.equalTo(2.5)
+            make.height.equalTo(3)
             make.top.equalTo(field.snp.bottom).offset(2)
             make.left.right.bottom.equalToSuperview()
         }
@@ -59,6 +65,29 @@ extension InputField: ViewCodingProtocol {
     
     func setupSubviews() {
         backgroundColor = .clear
+        field.delegate = self
+    }
+    
+}
+
+extension InputField: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3) {
+            self.bottomLineView.backgroundColor = self.bottomLineFocusedColor
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3) {
+            self.bottomLineView.backgroundColor = self.bottomLineColor
+        }
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        return field.shouldChangeCharacters(in: range, replacementString: string)
     }
     
 }

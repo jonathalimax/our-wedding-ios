@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewScreen: UIView {
 
+    var onLoginTap: (() -> Void)?
+    
     lazy var welcomeStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -19,7 +21,7 @@ class LoginViewScreen: UIView {
     lazy var welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "Bem vindo,"
-        label.font = UIFont.systemFont(ofSize: 36)
+        label.font = Resource.Font.SourceSansPro.bold(size: 34)
         label.textColor = Resource.Color.black
         return label
     }()
@@ -27,14 +29,15 @@ class LoginViewScreen: UIView {
     lazy var welcomeSignInLabel: UILabel = {
         let label = UILabel()
         label.text = "digite seu número"
-        label.font = UIFont.systemFont(ofSize: 36)
+        label.font = Resource.Font.SourceSansPro.bold(size: 34)
         label.textColor = Resource.Color.lightGray
         return label
     }()
     
     lazy var phoneNumberField: InputField = {
-        let inputField = InputField(placeholder: "(11)11111-1111")
-        inputField.field.keyboardType = .phonePad
+        let inputField = InputField(placeholder: "Celular")
+        inputField.field.mask = "(##)#####-####"
+        inputField.field.keyboardType = .numberPad
         return inputField
     }()
     
@@ -51,6 +54,10 @@ class LoginViewScreen: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.endEditing(true)
     }
     
 }
@@ -81,6 +88,8 @@ extension LoginViewScreen: ViewCodingProtocol {
             make.left.equalToSuperview().offset(38)
             make.right.equalToSuperview()
             make.height.equalTo(65)
+            make.top.greaterThanOrEqualTo(welcomeStackView.snp.bottom)
+                .offset(8)
         }
         
         continueButton.snp.makeConstraints { make in
@@ -88,12 +97,26 @@ extension LoginViewScreen: ViewCodingProtocol {
             make.height.equalTo(60)
             make.left.equalToSuperview().offset(38)
             make.bottom.equalToSuperview().inset(50)
+            make.top.greaterThanOrEqualTo(phoneNumberField.snp.bottom)
+                .offset(8)
         }
         
     }
     
     func setupSubviews() {
         self.backgroundColor = Resource.Color.white
+        self.continueButton.addTarget(self,
+                                      action: #selector(onLoginAction),
+                                      for: .touchUpInside)
+    }
+    
+}
+
+extension LoginViewScreen {
+    
+    @objc
+    private func onLoginAction() {
+        onLoginTap?()
     }
     
 }

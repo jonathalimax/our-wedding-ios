@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var delegate: LoginViewControllerDelegate?
+
     private var loginViewScreen: LoginViewScreen
     
     init() {
@@ -28,6 +30,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginViewScreen.onLoginTap = {
+            self.delegate?.loginViewControllerLogInSuccessfully(self)
+        }
     }
 
 }
