@@ -28,7 +28,8 @@ class LoginCoordinator: Coordinator {
 extension LoginCoordinator {
     
     private func startHomeCoordinator() {
-        let controllers = [UIViewController(), UIViewController(), UIViewController()]
+        let homeNavigationController = NavigationController(rootViewController: HomeViewController())
+        let controllers = [homeNavigationController, UIViewController(), UIViewController()]
         let coordinator = HomeCoordinator(window: window,
                                           controllers: controllers)
         coordinator.start()

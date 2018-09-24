@@ -41,7 +41,7 @@ private extension Button {
         switch type {
         case .primary:
             
-            layer.cornerRadius = 8
+            layer.cornerRadius = 18
             titleLabel?.font = Resource.Font.SourceSansPro.bold(size: 24)
             setTitleColor(Resource.Color.black, for: .normal)
             backgroundColor = Resource.Color.lightGray
