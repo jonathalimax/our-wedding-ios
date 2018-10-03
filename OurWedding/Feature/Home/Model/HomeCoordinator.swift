@@ -21,8 +21,10 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        window.rootViewController = tabBarController
-        window.makeKeyAndVisible()
+        
+        self.window.rootViewController = self.tabBarController
+        self.window.makeKeyAndVisibleAnimated()
+        
     }
     
 }

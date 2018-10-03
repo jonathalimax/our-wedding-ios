@@ -20,7 +20,7 @@ class LoginCoordinator: Coordinator {
         let loginViewController = LoginViewController()
         loginViewController.delegate = self
         window.rootViewController = loginViewController
-        window.makeKeyAndVisible()
+        window.makeKeyAndVisibleAnimated()
     }
     
 }

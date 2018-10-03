@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
 
@@ -24,6 +25,12 @@ class HomeViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = homeViewScreen
+        self.view.backgroundColor = Resource.Color.white
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override func viewDidLoad() {

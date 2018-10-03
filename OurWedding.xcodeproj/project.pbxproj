@@ -30,6 +30,8 @@
 		121AF17B2151F1B900967078 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 121AF1772151F1B800967078 /* SourceSansPro-Regular.ttf */; };
 		121AF17C2151F1B900967078 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 121AF1782151F1B900967078 /* SourceSansPro-SemiBold.ttf */; };
 		121AF17E2151FC6A00967078 /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121AF17D2151FC6A00967078 /* Nimble_Snapshots.framework */; };
+		123839472160490C00274FA7 /* UIWindow+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123839462160490C00274FA7 /* UIWindow+Transition.swift */; };
+		1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238394A21604E0100274FA7 /* UIView+SafeArea.swift */; };
 		12402A0E214F6BA100D2EC6B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A78214F5CA800174E56 /* Nimble.framework */; };
 		12402A0F214F6BA100D2EC6B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
 		12402A14214F6EE300D2EC6B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A13214F6EE300D2EC6B /* InputField.swift */; };
@@ -90,6 +92,8 @@
 		121AF1772151F1B800967078 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		121AF1782151F1B900967078 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		121AF17D2151FC6A00967078 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
+		123839462160490C00274FA7 /* UIWindow+Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Transition.swift"; sourceTree = "<group>"; };
+		1238394A21604E0100274FA7 /* UIView+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeArea.swift"; sourceTree = "<group>"; };
 		12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		12402A0B214F6B9200D2EC6B /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		12402A13214F6EE300D2EC6B /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
@@ -246,9 +250,9 @@
 		12054A72214F5C2200174E56 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1238394821604A0B00274FA7 /* Class */,
 				12B0FF662153426300408D04 /* Extension */,
 				12054A73214F5C4C00174E56 /* Protocols */,
-				1204245C21589620004277D7 /* NavigationController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -311,6 +315,14 @@
 			path = SourceSansPro;
 			sourceTree = "<group>";
 		};
+		1238394821604A0B00274FA7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1204245C21589620004277D7 /* NavigationController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		12402A04214F67A400D2EC6B /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,8 +369,10 @@
 		12B0FF662153426300408D04 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				12B0FF672153427300408D04 /* UIView+Rounded.swift */,
 				1204245A21588F17004277D7 /* UIView+Identifier.swift */,
+				12B0FF672153427300408D04 /* UIView+Rounded.swift */,
+				1238394A21604E0100274FA7 /* UIView+SafeArea.swift */,
+				123839462160490C00274FA7 /* UIWindow+Transition.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -612,8 +626,10 @@
 				1204245921588E85004277D7 /* EventHeaderCollectionViewCell.swift in Sources */,
 				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
 				12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */,
+				1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */,
 				12054A8C214F611500174E56 /* Resource+Text.swift in Sources */,
 				12402A16214F73C100D2EC6B /* Button.swift in Sources */,
+				123839472160490C00274FA7 /* UIWindow+Transition.swift in Sources */,
 				12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */,
 				12402A14214F6EE300D2EC6B /* InputField.swift in Sources */,
 				1204245B21588F17004277D7 /* UIView+Identifier.swift in Sources */,
