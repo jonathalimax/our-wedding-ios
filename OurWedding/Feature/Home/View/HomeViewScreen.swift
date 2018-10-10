@@ -129,7 +129,7 @@ extension HomeViewScreen: UICollectionViewDataSource {
                         at indexPath: IndexPath) -> UICollectionReusableView {
         
         switch kind {
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             
             let headerCell = collectionView
                 .dequeueReusableCell(withReuseIdentifier: EventHeaderCollectionViewCell.identifier,

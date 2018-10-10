@@ -29,11 +29,8 @@
 		121AF17A2151F1B900967078 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 121AF1762151F1B700967078 /* SourceSansPro-Bold.ttf */; };
 		121AF17B2151F1B900967078 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 121AF1772151F1B800967078 /* SourceSansPro-Regular.ttf */; };
 		121AF17C2151F1B900967078 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 121AF1782151F1B900967078 /* SourceSansPro-SemiBold.ttf */; };
-		121AF17E2151FC6A00967078 /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121AF17D2151FC6A00967078 /* Nimble_Snapshots.framework */; };
 		123839472160490C00274FA7 /* UIWindow+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123839462160490C00274FA7 /* UIWindow+Transition.swift */; };
 		1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238394A21604E0100274FA7 /* UIView+SafeArea.swift */; };
-		12402A0E214F6BA100D2EC6B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A78214F5CA800174E56 /* Nimble.framework */; };
-		12402A0F214F6BA100D2EC6B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
 		12402A14214F6EE300D2EC6B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A13214F6EE300D2EC6B /* InputField.swift */; };
 		12402A16214F73C100D2EC6B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A15214F73C100D2EC6B /* Button.swift */; };
 		12B0FF6521533D1900408D04 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* HomeViewScreen.swift */; };
@@ -45,20 +42,8 @@
 		12CE3C40215201B100AEFE79 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7B214F5CA800174E56 /* Alamofire.framework */; };
 		12CE3C462152077500AEFE79 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C452152077500AEFE79 /* HomeCoordinator.swift */; };
 		12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */; };
-		12EA5BD52151FE91007D4DE8 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */; };
 		DB6655C94A1656A5D6553CB9 /* Pods_OurWedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A123B0A335EA0333B82E1122 /* Pods_OurWedding.framework */; };
-		E8218EA25BB9209F2E87B948 /* Pods_OurWeddingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F649C317772E4FD719C8F34 /* Pods_OurWeddingUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		12054A53214F4E8100174E56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12054A36214F4E7F00174E56 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12054A3D214F4E7F00174E56;
-			remoteInfo = OurWedding;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1204245821588E85004277D7 /* EventHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,8 +54,6 @@
 		12054A48214F4E8100174E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12054A4B214F4E8100174E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12054A4D214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12054A52214F4E8100174E56 /* OurWeddingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurWeddingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12054A58214F4E8100174E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12054A68214F572900174E56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12054A6A214F574D00174E56 /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
 		12054A6C214F575900174E56 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -126,18 +109,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12054A4F214F4E8100174E56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12EA5BD52151FE91007D4DE8 /* FBSnapshotTestCase.framework in Frameworks */,
-				121AF17E2151FC6A00967078 /* Nimble_Snapshots.framework in Frameworks */,
-				12402A0E214F6BA100D2EC6B /* Nimble.framework in Frameworks */,
-				12402A0F214F6BA100D2EC6B /* Quick.framework in Frameworks */,
-				E8218EA25BB9209F2E87B948 /* Pods_OurWeddingUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				12054A40214F4E7F00174E56 /* OurWedding */,
-				12054A55214F4E8100174E56 /* OurWeddingUITests */,
 				12054A3F214F4E7F00174E56 /* Products */,
 				12054A76214F5CA800174E56 /* Frameworks */,
 				70F62D4AFA83803F916F76CD /* Pods */,
@@ -156,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				12054A3E214F4E7F00174E56 /* OurWedding.app */,
-				12054A52214F4E8100174E56 /* OurWeddingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,15 +139,6 @@
 				12054A63214F569100174E56 /* Resource */,
 			);
 			path = OurWedding;
-			sourceTree = "<group>";
-		};
-		12054A55214F4E8100174E56 /* OurWeddingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				12402A04214F67A400D2EC6B /* Feature */,
-				12054A58214F4E8100174E56 /* Info.plist */,
-			);
-			path = OurWeddingUITests;
 			sourceTree = "<group>";
 		};
 		12054A61214F53A700174E56 /* Feature */ = {
@@ -323,29 +283,6 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		12402A04214F67A400D2EC6B /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				12402A05214F67A900D2EC6B /* Login */,
-			);
-			path = Feature;
-			sourceTree = "<group>";
-		};
-		12402A05214F67A900D2EC6B /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				12402A06214F67AD00D2EC6B /* View */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		12402A06214F67AD00D2EC6B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		12402A12214F6EC500D2EC6B /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,26 +374,6 @@
 			productReference = 12054A3E214F4E7F00174E56 /* OurWedding.app */;
 			productType = "com.apple.product-type.application";
 		};
-		12054A51214F4E8100174E56 /* OurWeddingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12054A5E214F4E8100174E56 /* Build configuration list for PBXNativeTarget "OurWeddingUITests" */;
-			buildPhases = (
-				018ABE19281AA75D0EF1C18C /* [CP] Check Pods Manifest.lock */,
-				12054A4E214F4E8100174E56 /* Sources */,
-				12054A4F214F4E8100174E56 /* Frameworks */,
-				12054A50214F4E8100174E56 /* Resources */,
-				12402A10214F6BA500D2EC6B /* Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12054A54214F4E8100174E56 /* PBXTargetDependency */,
-			);
-			name = OurWeddingUITests;
-			productName = OurWeddingUITests;
-			productReference = 12054A52214F4E8100174E56 /* OurWeddingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,11 +386,7 @@
 				TargetAttributes = {
 					12054A3D214F4E7F00174E56 = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					12054A51214F4E8100174E56 = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
-						TestTargetID = 12054A3D214F4E7F00174E56;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -491,7 +404,6 @@
 			projectRoot = "";
 			targets = (
 				12054A3D214F4E7F00174E56 /* OurWedding */,
-				12054A51214F4E8100174E56 /* OurWeddingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -510,34 +422,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12054A50214F4E8100174E56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		018ABE19281AA75D0EF1C18C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OurWeddingUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		12054A81214F5CB800174E56 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,25 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		12402A10214F6BA500D2EC6B /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble_Snapshots.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		C66A136A2E302B8A73938C44 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -645,22 +514,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12054A4E214F4E8100174E56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		12054A54214F4E8100174E56 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 12054A3D214F4E7F00174E56 /* OurWedding */;
-			targetProxy = 12054A53214F4E8100174E56 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */ = {
@@ -806,7 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -829,61 +683,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		12054A5F214F4E8100174E56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48092FBD7E5E8AF18AA8BE18 /* Pods-OurWeddingUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S34WA7GG8R;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = OurWeddingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWeddingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OurWedding;
-			};
-			name = Debug;
-		};
-		12054A60214F4E8100174E56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDC6B2591E73C6B78C1112F9 /* Pods-OurWeddingUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S34WA7GG8R;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = OurWeddingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWeddingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OurWedding;
 			};
 			name = Release;
 		};
@@ -904,15 +705,6 @@
 			buildConfigurations = (
 				12054A5C214F4E8100174E56 /* Debug */,
 				12054A5D214F4E8100174E56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		12054A5E214F4E8100174E56 /* Build configuration list for PBXNativeTarget "OurWeddingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12054A5F214F4E8100174E56 /* Debug */,
-				12054A60214F4E8100174E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
