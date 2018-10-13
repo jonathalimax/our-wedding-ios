@@ -12,6 +12,8 @@ class HomeViewScreen: UIView {
     
     let headerView: HomeHeaderView
     
+    let padding: CGFloat = 20.0
+    
     let weddingCollectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
@@ -38,29 +40,13 @@ class HomeViewScreen: UIView {
 extension HomeViewScreen: ViewCodingProtocol {
     
     func addSubviews() {
-        //self.addSubview(headerView)
         self.addSubview(weddingCollectionView)
     }
     
     func setupConstraints() {
         
-//        headerView.snp.makeConstraints { make in
-//            make.top.equalToSuperview().offset(38)
-//            make.left.right.equalToSuperview()
-//        }
-        
         weddingCollectionView.snp.makeConstraints { make in
-            if #available(iOS 11.0, *) {
-                make.left.equalTo(super.safeAreaLayoutGuide)
-                make.top.equalTo(super.safeAreaLayoutGuide)
-                make.right.equalTo(super.safeAreaLayoutGuide)
-                make.bottom.equalTo(super.safeAreaLayoutGuide)
-            } else {
-                make.left.equalToSuperview()
-                make.top.equalToSuperview()
-                make.right.equalToSuperview()
-                make.bottom.equalToSuperview()
-            }
+            make.edges.equalTo(super.safeArea)
         }
         
     }
@@ -73,9 +59,6 @@ extension HomeViewScreen: ViewCodingProtocol {
         self.weddingCollectionView
             .register(EventCollectionViewCell.self,
                       forCellWithReuseIdentifier: EventCollectionViewCell.identifier)
-        self.weddingCollectionView
-            .register(EventHeaderCollectionViewCell.self,
-                      forCellWithReuseIdentifier: EventHeaderCollectionViewCell.identifier)
     }
     
 }
@@ -86,8 +69,9 @@ extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = weddingCollectionView.frame.width - 60
-        let height = weddingCollectionView.frame.height - 40
+        let frame = weddingCollectionView.frame
+        let width = frame.width - (padding * 3)
+        let height = frame.height - (padding * 2)
         return  CGSize(width: width,
                        height: height)
     }
@@ -96,14 +80,14 @@ extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
+        return UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 20.0
+        return padding
     }
     
 }
@@ -122,35 +106,19 @@ extension HomeViewScreen: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let identifier = EventCollectionViewCell
+            .identifier
+        
         guard let cell =
-            collectionView.dequeueReusableCell(
-                withReuseIdentifier: EventCollectionViewCell.identifier,
-                for: indexPath) as? EventCollectionViewCell else {
-                    
-                    fatalError("Cell not found")
+            collectionView
+                .dequeueReusableCell(
+                    withReuseIdentifier: identifier,
+                    for: indexPath) as? EventCollectionViewCell else {
+                        
+                        fatalError("\(identifier) not found")
         }
         
         return cell
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        viewForSupplementaryElementOfKind kind: String,
-                        at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        switch kind {
-        case UICollectionView.elementKindSectionHeader:
-            
-            let headerCell = collectionView
-                .dequeueReusableCell(withReuseIdentifier: EventHeaderCollectionViewCell.identifier,
-                                     for: indexPath)
-            return headerCell
-            
-        default:
-            break
-        }
-        
-        fatalError("Header or footer not found for collectionView")
         
     }
     

@@ -10,10 +10,13 @@ import UIKit
 
 extension UIView {
     
-    func addSubviewForSafeArea(view: UIView) {
-        
-        
-        
+    var safeArea: UILayoutGuide {
+        get {
+            if #available(iOS 11.0, *) {
+                return self.safeAreaLayoutGuide
+            }
+            return self.layoutMarginsGuide
+        }
     }
     
 }
