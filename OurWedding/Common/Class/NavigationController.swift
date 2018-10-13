@@ -33,6 +33,9 @@ private extension NavigationController {
             self.navigationBar.prefersLargeTitles = true
         }
         
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
     }
     
 }

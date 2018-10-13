@@ -50,7 +50,17 @@ extension HomeViewScreen: ViewCodingProtocol {
 //        }
         
         weddingCollectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            if #available(iOS 11.0, *) {
+                make.left.equalTo(super.safeAreaLayoutGuide)
+                make.top.equalTo(super.safeAreaLayoutGuide)
+                make.right.equalTo(super.safeAreaLayoutGuide)
+                make.bottom.equalTo(super.safeAreaLayoutGuide)
+            } else {
+                make.left.equalToSuperview()
+                make.top.equalToSuperview()
+                make.right.equalToSuperview()
+                make.bottom.equalToSuperview()
+            }
         }
         
     }
@@ -76,8 +86,8 @@ extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = (weddingCollectionView.frame.width / 1.2)
-        let height = weddingCollectionView.frame.height - 100
+        let width = weddingCollectionView.frame.width - 60
+        let height = weddingCollectionView.frame.height - 40
         return  CGSize(width: width,
                        height: height)
     }
@@ -86,7 +96,7 @@ extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 0, left: 20.0, bottom: 100.0, right: 20.0)
+        return UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     }
     
     func collectionView(_ collectionView: UICollectionView,
