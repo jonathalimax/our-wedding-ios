@@ -1,5 +1,5 @@
 //
-//  HomeViewScreen.swift
+//  EventViewScreen.swift
 //  OurWedding
 //
 //  Created by Jonatha Lima on 19/09/18.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-class HomeViewScreen: UIView {
-    
-    let headerView: HomeHeaderView
+class EventViewScreen: UIView {
     
     let padding: CGFloat = 20.0
     
@@ -26,7 +24,6 @@ class HomeViewScreen: UIView {
     }()
     
     override init(frame: CGRect = .zero) {
-        headerView = HomeHeaderView()
         super.init(frame: frame)
         setupViewCode()
     }
@@ -37,7 +34,7 @@ class HomeViewScreen: UIView {
     
 }
 
-extension HomeViewScreen: ViewCodingProtocol {
+extension EventViewScreen: ViewCodingProtocol {
     
     func addSubviews() {
         self.addSubview(weddingCollectionView)
@@ -63,7 +60,7 @@ extension HomeViewScreen: ViewCodingProtocol {
     
 }
 
-extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
+extension EventViewScreen: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -92,9 +89,9 @@ extension HomeViewScreen: UICollectionViewDelegateFlowLayout {
     
 }
 
-extension HomeViewScreen: UICollectionViewDelegate {}
+extension EventViewScreen: UICollectionViewDelegate {}
 
-extension HomeViewScreen: UICollectionViewDataSource {
+extension EventViewScreen: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {

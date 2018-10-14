@@ -1,5 +1,5 @@
 //
-//  HomeCoordinator.swift
+//  EventCoordinator.swift
 //  OurWedding
 //
 //  Created by Jonatha Lima on 19/09/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCoordinator: Coordinator {
+class EventCoordinator: Coordinator {
     
     enum Destination {
         case events
@@ -22,22 +22,12 @@ class HomeCoordinator: Coordinator {
         self.window = window
         tabBarController = UITabBarController(nibName: nil, bundle: nil)
         tabBarController.viewControllers = controllers
+        tabBarController.tabBar.tintColor = Resource.Color.black
     }
     
     func start() {
-        navigate(to: .events)
-    }
-    
-    func navigate(to destination: Destination) {
-        
-        switch destination {
-        case .events:
-            
-            self.window.rootViewController = self.tabBarController
-            self.window.makeKeyAndVisibleAnimated()
-            
-        }
-        
+        self.window.rootViewController = self.tabBarController
+        self.window.makeKeyAndVisibleAnimated()
     }
     
 }

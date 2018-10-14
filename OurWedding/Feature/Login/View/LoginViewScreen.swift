@@ -23,6 +23,7 @@ class LoginViewScreen: UIView {
         label.text = "Bem vindo,"
         label.font = Resource.Font.SourceSansPro.bold(size: 34)
         label.textColor = Resource.Color.black
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
     
@@ -31,6 +32,7 @@ class LoginViewScreen: UIView {
         label.text = "digite seu número"
         label.font = Resource.Font.SourceSansPro.bold(size: 34)
         label.textColor = Resource.Color.lightGray
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
     

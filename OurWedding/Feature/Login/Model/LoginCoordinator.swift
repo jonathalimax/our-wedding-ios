@@ -42,10 +42,10 @@ class LoginCoordinator: Coordinator {
 
 extension LoginCoordinator {
     
-    private func startHomeCoordinator() {
-        let homeNavigationController = NavigationController(rootViewController: HomeViewController())
-        let controllers = [homeNavigationController, UIViewController(), UIViewController()]
-        let coordinator = HomeCoordinator(window: window,
+    private func startEventCoordinator() {
+        let eventNavigationController = NavigationController(rootViewController: EventViewController())
+        let controllers = [eventNavigationController, UIViewController(), UIViewController()]
+        let coordinator = EventCoordinator(window: window,
                                           controllers: controllers)
         coordinator.start()
     }
@@ -55,7 +55,7 @@ extension LoginCoordinator {
 extension LoginCoordinator: LoginViewControllerDelegate {
     
     func loginViewControllerLogInSuccessfully(_ viewController: LoginViewController) {
-        startHomeCoordinator()
+        startEventCoordinator()
     }
     
 }

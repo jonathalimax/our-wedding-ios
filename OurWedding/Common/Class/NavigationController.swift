@@ -33,9 +33,13 @@ private extension NavigationController {
             self.navigationBar.prefersLargeTitles = true
         }
         
+        let textAttributes =
+            [NSAttributedString.Key.foregroundColor: Resource.Color.black]
+        
+        self.navigationBar.titleTextAttributes = textAttributes
         self.navigationBar.shadowImage = UIImage()
         self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        
+
     }
     
 }

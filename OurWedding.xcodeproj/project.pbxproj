@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1204245921588E85004277D7 /* EventHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204245821588E85004277D7 /* EventHeaderCollectionViewCell.swift */; };
 		1204245B21588F17004277D7 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204245A21588F17004277D7 /* UIView+Identifier.swift */; };
 		1204245D21589620004277D7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204245C21589620004277D7 /* NavigationController.swift */; };
 		12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A41214F4E7F00174E56 /* AppDelegate.swift */; };
@@ -33,20 +32,18 @@
 		1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238394A21604E0100274FA7 /* UIView+SafeArea.swift */; };
 		12402A14214F6EE300D2EC6B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A13214F6EE300D2EC6B /* InputField.swift */; };
 		12402A16214F73C100D2EC6B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A15214F73C100D2EC6B /* Button.swift */; };
-		12B0FF6521533D1900408D04 /* HomeViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* HomeViewScreen.swift */; };
+		12986DDA2172D8310075B8C0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DD92172D8310075B8C0 /* EventViewController.swift */; };
+		12B0FF6521533D1900408D04 /* EventViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* EventViewScreen.swift */; };
 		12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF672153427300408D04 /* UIView+Rounded.swift */; };
-		12B0FF6B21534A5F00408D04 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6A21534A5F00408D04 /* HomeViewController.swift */; };
-		12B0FF6D2154495C00408D04 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6C2154495C00408D04 /* HomeHeaderView.swift */; };
 		12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */; };
 		12CE3C3F2152011F00AEFE79 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6A214F574D00174E56 /* LoginViewScreen.swift */; };
 		12CE3C40215201B100AEFE79 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7B214F5CA800174E56 /* Alamofire.framework */; };
-		12CE3C462152077500AEFE79 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C452152077500AEFE79 /* HomeCoordinator.swift */; };
+		12CE3C462152077500AEFE79 /* EventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C452152077500AEFE79 /* EventCoordinator.swift */; };
 		12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */; };
 		DB6655C94A1656A5D6553CB9 /* Pods_OurWedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A123B0A335EA0333B82E1122 /* Pods_OurWedding.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1204245821588E85004277D7 /* EventHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		1204245A21588F17004277D7 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
 		1204245C21589620004277D7 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		12054A3E214F4E7F00174E56 /* OurWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,13 +78,12 @@
 		12402A0B214F6B9200D2EC6B /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		12402A13214F6EE300D2EC6B /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		12402A15214F73C100D2EC6B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		12986DD92172D8310075B8C0 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		12B0AD6C2150A57F00791D74 /* InputMask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMask.framework; path = Carthage/Build/iOS/InputMask.framework; sourceTree = "<group>"; };
-		12B0FF6421533D1900408D04 /* HomeViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewScreen.swift; sourceTree = "<group>"; };
+		12B0FF6421533D1900408D04 /* EventViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreen.swift; sourceTree = "<group>"; };
 		12B0FF672153427300408D04 /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
-		12B0FF6A21534A5F00408D04 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		12B0FF6C2154495C00408D04 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
-		12CE3C452152077500AEFE79 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		12CE3C452152077500AEFE79 /* EventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoordinator.swift; sourceTree = "<group>"; };
 		12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1E26330051FE2CE068682A80 /* Pods-OurWedding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWedding.release.xcconfig"; path = "Pods/Target Support Files/Pods-OurWedding/Pods-OurWedding.release.xcconfig"; sourceTree = "<group>"; };
 		2F649C317772E4FD719C8F34 /* Pods_OurWeddingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurWeddingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +140,7 @@
 		12054A61214F53A700174E56 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				12CE3C412152073100AEFE79 /* Home */,
+				12CE3C412152073100AEFE79 /* Event */,
 				12054A64214F56A600174E56 /* Login */,
 			);
 			path = Feature;
@@ -295,10 +291,8 @@
 		12B0FF6321533CFF00408D04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				12B0FF6421533D1900408D04 /* HomeViewScreen.swift */,
-				12B0FF6C2154495C00408D04 /* HomeHeaderView.swift */,
+				12B0FF6421533D1900408D04 /* EventViewScreen.swift */,
 				12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */,
-				1204245821588E85004277D7 /* EventHeaderCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,25 +311,25 @@
 		12B0FF6921534A4A00408D04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				12B0FF6A21534A5F00408D04 /* HomeViewController.swift */,
+				12986DD92172D8310075B8C0 /* EventViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		12CE3C412152073100AEFE79 /* Home */ = {
+		12CE3C412152073100AEFE79 /* Event */ = {
 			isa = PBXGroup;
 			children = (
 				12CE3C432152074500AEFE79 /* Model */,
 				12B0FF6321533CFF00408D04 /* View */,
 				12B0FF6921534A4A00408D04 /* ViewController */,
 			);
-			path = Home;
+			path = Event;
 			sourceTree = "<group>";
 		};
 		12CE3C432152074500AEFE79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12CE3C452152077500AEFE79 /* HomeCoordinator.swift */,
+				12CE3C452152077500AEFE79 /* EventCoordinator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -489,15 +483,14 @@
 				1204245D21589620004277D7 /* NavigationController.swift in Sources */,
 				12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */,
 				12054A75214F5C6500174E56 /* ViewCodingProtocol.swift in Sources */,
-				12B0FF6B21534A5F00408D04 /* HomeViewController.swift in Sources */,
-				12CE3C462152077500AEFE79 /* HomeCoordinator.swift in Sources */,
+				12CE3C462152077500AEFE79 /* EventCoordinator.swift in Sources */,
 				12054A88214F610500174E56 /* Resource+Color.swift in Sources */,
-				1204245921588E85004277D7 /* EventHeaderCollectionViewCell.swift in Sources */,
 				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
 				12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */,
 				1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */,
 				12054A8C214F611500174E56 /* Resource+Text.swift in Sources */,
 				12402A16214F73C100D2EC6B /* Button.swift in Sources */,
+				12986DDA2172D8310075B8C0 /* EventViewController.swift in Sources */,
 				123839472160490C00274FA7 /* UIWindow+Transition.swift in Sources */,
 				12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */,
 				12402A14214F6EE300D2EC6B /* InputField.swift in Sources */,
@@ -507,9 +500,8 @@
 				12054A8A214F610D00174E56 /* Resource+Font.swift in Sources */,
 				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
 				12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */,
-				12B0FF6D2154495C00408D04 /* HomeHeaderView.swift in Sources */,
 				12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */,
-				12B0FF6521533D1900408D04 /* HomeViewScreen.swift in Sources */,
+				12B0FF6521533D1900408D04 /* EventViewScreen.swift in Sources */,
 				12054A84214F606A00174E56 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
