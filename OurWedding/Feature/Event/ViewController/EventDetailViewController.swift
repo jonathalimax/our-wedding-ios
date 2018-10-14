@@ -8,15 +8,20 @@
 
 import UIKit
 
+protocol EventDetailViewControllerDelegate: class {
+    func eventDetailViewController(_ controller: EventDetailViewController,
+                                   didSelectItem item: Any)
+}
+
 class EventDetailViewController: UIViewController {
     
-    private let items: [String]
     private var eventDetailScreen: EventDetailScreen?
     
+    weak var delegate: EventDetailViewControllerDelegate?
+    
     init() {
-        items = ["Casal", "Local", "Padrinhos"]
         super.init(nibName: nil, bundle: nil)
-        eventDetailScreen = EventDetailScreen(self)
+        eventDetailScreen = EventDetailScreen()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,33 +43,22 @@ class EventDetailViewController: UIViewController {
 extension EventDetailViewController {
     
     private func prepare() {
+        self.title = "Detalhes"
+        self.eventDetailScreen?.datasource?.delegate = self
     }
     
 }
 
-extension EventDetailViewController: UITableViewDataSource {
+extension EventDetailViewController: TableViewDatasourceDelegate {
     
-    func tableView(_ tableView: UITableView,
-                   numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableViewDatasourceDidSelecteItem(item: Any) {
         
-        let identifier = UITableViewCell.identifier
-        
-        guard let cell =
-            tableView.dequeueReusableCell(withIdentifier: identifier) else {
-                fatalError("\(identifier) not found")
+        guard let eventName = item as? String else {
+            return
         }
         
-        cell.textLabel?.text = items[indexPath.row]
-        cell.accessoryType = .disclosureIndicator
+        delegate?.eventDetailViewController(self, didSelectItem: eventName)
         
-        return cell
     }
     
 }
-
-extension EventDetailViewController: UITableViewDelegate {}

@@ -8,17 +8,19 @@
 
 import Foundation
 
+enum Destination {}
+
 protocol Coordinator: class {
     
     var children: [Coordinator] { get set } 
     
     func start()
-    func navigate(to destination: Coordinator)
+    func navigate(to destination: Destination)
 }
 
 extension Coordinator {
     
-    func navigate(to destination: Coordinator){}
+    func navigate(to destination: Destination){}
     
     func addChildCoordinator(childCoordinator: Coordinator) {
         self.children.append(childCoordinator)

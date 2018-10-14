@@ -10,7 +10,7 @@ import UIKit
 
 class EventViewScreen: UIView {
     
-    var datasource: EventDatasource<EventCollectionViewCell>? {
+    var datasource: EventDatasource? {
         didSet {
             weddingCollectionView.reloadData()
         }

@@ -17,13 +17,20 @@ class AppCoordinator: Coordinator {
     
     private let window: UIWindow
     
+    private let eventNavigationController: UINavigationController
+    
     var children: [Coordinator]
     private var tabBarController: UITabBarController
     
     init(window: UIWindow) {
         children = []
         self.window = window
+        
         tabBarController = UITabBarController(nibName: nil, bundle: nil)
+        eventNavigationController =
+            NavigationController(rootViewController: EventViewController())
+        
+        prepare()
     }
     
     func start() {
@@ -31,16 +38,12 @@ class AppCoordinator: Coordinator {
     }
     
     func prepare() {
-        let eventNavigationController =
-            NavigationController(rootViewController: EventViewController())
-        
         let controllers = [eventNavigationController]
         tabBarController.viewControllers = controllers
         tabBarController.tabBar.tintColor = Resource.Color.black
     }
     
     func setupTabBar() {
-        self.prepare()
         self.window.rootViewController = tabBarController
         self.window.makeKeyAndVisibleAnimated()
     }
@@ -58,7 +61,8 @@ class AppCoordinator: Coordinator {
         case .event:
             
             setupTabBar()
-            let coordinator = EventCoordinator(tabBarController: tabBarController)
+            let coordinator = EventCoordinator(tabBarController: tabBarController,
+                                               navigation: eventNavigationController)
             coordinator.delegate = self
             coordinator.start()
             addChildCoordinator(childCoordinator: coordinator)

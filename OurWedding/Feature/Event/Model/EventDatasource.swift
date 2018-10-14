@@ -8,21 +8,32 @@
 
 import UIKit
 
-class EventDatasource<T: UICollectionViewCell>: NSObject, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate {
+protocol EventDatasourceDelegate: class {
+    func eventDatasource(_ datasource: EventDatasource,
+                         didSelectItem item: Int)
+}
+
+class EventDatasource: NSObject {
+    
+    weak var delegate: EventDatasourceDelegate?
     
     private let items: [Any]
     private let collectionView: UICollectionView
-    
     private let padding: CGFloat = 20.0
     
     init(collectionView: UICollectionView, items: [Any]) {
         self.items = items
         self.collectionView = collectionView
         super.init()
-        self.collectionView.register(T.self,
-                                     forCellWithReuseIdentifier: T.identifier)
+        self.collectionView
+            .register(EventCollectionViewCell.self,
+                      forCellWithReuseIdentifier: EventCollectionViewCell.identifier)
     }
- 
+    
+}
+
+extension EventDatasource: UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -48,6 +59,9 @@ class EventDatasource<T: UICollectionViewCell>: NSObject, UICollectionViewDelega
         return padding
     }
     
+}
+extension EventDatasource: UICollectionViewDataSource{
+    
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -56,18 +70,29 @@ class EventDatasource<T: UICollectionViewCell>: NSObject, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let identifier = T.identifier
+        let identifier = EventCollectionViewCell.identifier
         
         guard let cell =
             collectionView
                 .dequeueReusableCell(
                     withReuseIdentifier: identifier,
-                    for: indexPath) as? T else {
+                    for: indexPath) as? EventCollectionViewCell else {
                         
                         fatalError("\(identifier) not found")
         }
         
         return cell
+        
+    }
+    
+}
+
+extension EventDatasource: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        
+        delegate?.eventDatasource(self, didSelectItem: indexPath.row)
         
     }
     

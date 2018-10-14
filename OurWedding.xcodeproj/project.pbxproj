@@ -36,6 +36,8 @@
 		12986DDC2172D93D0075B8C0 /* EventDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */; };
 		12986DDE2172DEA00075B8C0 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */; };
 		12986DE0217387330075B8C0 /* EventDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDF217387330075B8C0 /* EventDatasource.swift */; };
+		12986DE421739D1B0075B8C0 /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */; };
+		12986DE62173A66E0075B8C0 /* UITableViewCell+Prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DE52173A66E0075B8C0 /* UITableViewCell+Prepare.swift */; };
 		12B0FF6521533D1900408D04 /* EventViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* EventViewScreen.swift */; };
 		12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF672153427300408D04 /* UIView+Rounded.swift */; };
 		12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */; };
@@ -85,6 +87,8 @@
 		12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailScreen.swift; sourceTree = "<group>"; };
 		12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		12986DDF217387330075B8C0 /* EventDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDatasource.swift; sourceTree = "<group>"; };
+		12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
+		12986DE52173A66E0075B8C0 /* UITableViewCell+Prepare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Prepare.swift"; sourceTree = "<group>"; };
 		12B0AD6C2150A57F00791D74 /* InputMask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMask.framework; path = Carthage/Build/iOS/InputMask.framework; sourceTree = "<group>"; };
 		12B0FF6421533D1900408D04 /* EventViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreen.swift; sourceTree = "<group>"; };
 		12B0FF672153427300408D04 /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
@@ -281,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				1204245C21589620004277D7 /* NavigationController.swift */,
+				12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 		12B0FF662153426300408D04 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				12986DE52173A66E0075B8C0 /* UITableViewCell+Prepare.swift */,
 				1204245A21588F17004277D7 /* UIView+Identifier.swift */,
 				12B0FF672153427300408D04 /* UIView+Rounded.swift */,
 				1238394A21604E0100274FA7 /* UIView+SafeArea.swift */,
@@ -493,6 +499,7 @@
 				12986DDC2172D93D0075B8C0 /* EventDetailScreen.swift in Sources */,
 				12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */,
 				12054A75214F5C6500174E56 /* ViewCodingProtocol.swift in Sources */,
+				12986DE421739D1B0075B8C0 /* TableViewDatasource.swift in Sources */,
 				12CE3C462152077500AEFE79 /* EventCoordinator.swift in Sources */,
 				12054A88214F610500174E56 /* Resource+Color.swift in Sources */,
 				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
@@ -509,6 +516,7 @@
 				12CE3C3F2152011F00AEFE79 /* LoginViewScreen.swift in Sources */,
 				12054A86214F60ED00174E56 /* Resource+Image.swift in Sources */,
 				12054A8A214F610D00174E56 /* Resource+Font.swift in Sources */,
+				12986DE62173A66E0075B8C0 /* UITableViewCell+Prepare.swift in Sources */,
 				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
 				12986DE0217387330075B8C0 /* EventDatasource.swift in Sources */,
 				12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */,

@@ -15,29 +15,62 @@ protocol EventCoordinatorDelegate: class {
 class EventCoordinator: Coordinator {
     
     enum Destination {
-        case detail
+        case detail(event: Int)
     }
     
     var children: [Coordinator]
     weak var delegate: EventCoordinatorDelegate?
     
     private let tabBarController: UITabBarController
+    private let navigation: UINavigationController
     
-    init(tabBarController: UITabBarController) {
+    init(tabBarController: UITabBarController, navigation: UINavigationController) {
         children = []
+        self.navigation = navigation
         self.tabBarController = tabBarController
     }
     
     func start() {
-        guard let viewControllers = tabBarController.viewControllers else {
-            return
-        }
-        for (index, controller) in viewControllers.enumerated() {
-            if controller.isKind(of: EventViewController.self) {
-                tabBarController.selectedIndex = index
+        
+        guard let viewControllers = tabBarController.viewControllers,
+            let rootViewController = navigation.viewControllers.first else {
                 return
-            }
         }
+        
+        for (index, controller) in viewControllers.enumerated() {
+            
+            guard let eventViewController = rootViewController as? EventViewController,
+                controller === navigation else {
+                    continue
+            }
+            
+            eventViewController.delegate = self
+            tabBarController.selectedIndex = index
+            
+        }
+        
+    }
+    
+    func navigate(to destination: Destination) {
+        
+        switch destination {
+        case .detail(let event):
+            print(event)
+            let eventDetailViewController = EventDetailViewController()
+            eventDetailViewController.hidesBottomBarWhenPushed = true
+            navigation.pushViewController(eventDetailViewController, animated: true)
+        }
+        
+    }
+    
+}
+
+extension EventCoordinator: EventViewControllerDelegate {
+    
+    func eventViewController(_ viewController: EventViewController,
+                             didSelectEvent event: Int) {
+        
+        navigate(to: .detail(event: event))
     }
     
 }

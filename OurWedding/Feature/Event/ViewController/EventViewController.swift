@@ -47,22 +47,24 @@ extension EventViewController {
         let title = "Eventos"
         self.title = title
         
+        self.eventViewScreen.datasource?.delegate = self
+        
         self.tabBarItem =
             UITabBarItem(title: title,
                          image: Resource.Image.calendar,
                          selectedImage: nil)
-
+        
     }
     
 }
 
-//extension EventViewController: UICollectionViewDelegate {
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//        delegate?.eventViewController(self,
-//                                      didSelectEvent: indexPath.row)
-//
-//    }
-//
-//}
+extension EventViewController: EventDatasourceDelegate {
+    
+    func eventDatasource(_ datasource: EventDatasource,
+                         didSelectItem item: Int) {
+        
+        delegate?.eventViewController(self,
+                                      didSelectEvent: item)
+    }
+    
+}

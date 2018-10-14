@@ -10,15 +10,23 @@ import UIKit
 
 class EventDetailScreen: UIView {
     
+    var datasource: TableViewDatasource<UITableViewCell>? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.tableHeaderView = UIView()
+        tableView.tableFooterView = UIView()
         return tableView
     }()
     
-    init(_ delegateSource: (UITableViewDelegate & UITableViewDataSource)) {
+    init() {
         super.init(frame: .zero)
-        tableView.delegate = delegateSource
-        tableView.dataSource = delegateSource
+        self.datasource = TableViewDatasource(tableView: tableView)
+        self.datasource?.items = ["Noivos", "Local", "Padrinhos"]
         setupViewCode()
     }
     
@@ -47,8 +55,8 @@ extension EventDetailScreen: ViewCodingProtocol {
     
     func setupSubviews() {
         self.backgroundColor = Resource.Color.white
-        self.tableView.register(UITableViewCell.self,
-                                forCellReuseIdentifier: UITableViewCell.identifier)
+        tableView.delegate = datasource
+        tableView.dataSource = datasource
     }
     
 }
