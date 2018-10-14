@@ -9,5 +9,12 @@
 import Foundation
 
 protocol Coordinator {
+    associatedtype Destination
+    
     func start()
+    func navigate(to destination: Destination)
+}
+
+extension Coordinator {
+    func navigate(to destination: Destination){}
 }

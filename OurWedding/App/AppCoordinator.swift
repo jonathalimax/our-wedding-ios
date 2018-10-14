@@ -10,6 +10,10 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    enum Destination {
+        case login
+    }
+    
     let window: UIWindow
     
     init(window: UIWindow) {
@@ -17,8 +21,17 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let loginCoordinator = LoginCoordinator(window: window)
-        loginCoordinator.start()
+        navigate(to: .login)
+    }
+    
+    func navigate(to destination: Destination) {
+        
+        switch destination {
+        case .login:
+            let loginCoordinator = LoginCoordinator(window: window)
+            loginCoordinator.start()
+        }
+        
     }
     
 }

@@ -10,6 +10,10 @@ import UIKit
 
 class LoginCoordinator: Coordinator {
     
+    enum Destination {
+        case login
+    }
+    
     let window: UIWindow
     
     init(window: UIWindow) {
@@ -17,10 +21,21 @@ class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        let loginViewController = LoginViewController()
-        loginViewController.delegate = self
-        window.rootViewController = loginViewController
-        window.makeKeyAndVisibleAnimated()
+        navigate(to: .login)
+    }
+    
+    func navigate(to destination: Destination) {
+        
+        switch destination {
+        case .login:
+            
+            let loginViewController = LoginViewController()
+            loginViewController.delegate = self
+            window.rootViewController = loginViewController
+            window.makeKeyAndVisibleAnimated()
+            
+        }
+        
     }
     
 }

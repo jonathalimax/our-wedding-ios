@@ -12,9 +12,15 @@ extension UIWindow {
     
     func makeKeyAndVisibleAnimated() {
         
-        UIView.transition(with: self, duration: 0.3, options: .transitionCrossDissolve, animations: {
-            self.makeKeyAndVisible()
-        }, completion: nil)
+        UIView
+            .transition(with: self,
+                        duration: 0.3,
+                        options: .transitionCrossDissolve,
+                        animations: {
+                            
+                            self.makeKeyAndVisible()
+                            
+            }, completion: nil)
         
     }
     

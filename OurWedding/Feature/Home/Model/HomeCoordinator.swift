@@ -10,6 +10,10 @@ import UIKit
 
 class HomeCoordinator: Coordinator {
     
+    enum Destination {
+        case events
+    }
+    
     var window: UIWindow
     var tabBarController: UITabBarController
     
@@ -21,9 +25,18 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
+        navigate(to: .events)
+    }
+    
+    func navigate(to destination: Destination) {
         
-        self.window.rootViewController = self.tabBarController
-        self.window.makeKeyAndVisibleAnimated()
+        switch destination {
+        case .events:
+            
+            self.window.rootViewController = self.tabBarController
+            self.window.makeKeyAndVisibleAnimated()
+            
+        }
         
     }
     
