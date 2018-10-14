@@ -38,6 +38,7 @@
 		12986DE0217387330075B8C0 /* EventDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDF217387330075B8C0 /* EventDatasource.swift */; };
 		12986DE421739D1B0075B8C0 /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */; };
 		12986DE62173A66E0075B8C0 /* UITableViewCell+Prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DE52173A66E0075B8C0 /* UITableViewCell+Prepare.swift */; };
+		12986DE82173DAA90075B8C0 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DE72173DAA90075B8C0 /* UIView+Shadow.swift */; };
 		12B0FF6521533D1900408D04 /* EventViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* EventViewScreen.swift */; };
 		12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF672153427300408D04 /* UIView+Rounded.swift */; };
 		12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */; };
@@ -89,6 +90,7 @@
 		12986DDF217387330075B8C0 /* EventDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDatasource.swift; sourceTree = "<group>"; };
 		12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
 		12986DE52173A66E0075B8C0 /* UITableViewCell+Prepare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Prepare.swift"; sourceTree = "<group>"; };
+		12986DE72173DAA90075B8C0 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		12B0AD6C2150A57F00791D74 /* InputMask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMask.framework; path = Carthage/Build/iOS/InputMask.framework; sourceTree = "<group>"; };
 		12B0FF6421533D1900408D04 /* EventViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreen.swift; sourceTree = "<group>"; };
 		12B0FF672153427300408D04 /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				12B0FF672153427300408D04 /* UIView+Rounded.swift */,
 				1238394A21604E0100274FA7 /* UIView+SafeArea.swift */,
 				123839462160490C00274FA7 /* UIWindow+Transition.swift */,
+				12986DE72173DAA90075B8C0 /* UIView+Shadow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				12986DDA2172D8310075B8C0 /* EventViewController.swift in Sources */,
 				123839472160490C00274FA7 /* UIWindow+Transition.swift in Sources */,
 				12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */,
+				12986DE82173DAA90075B8C0 /* UIView+Shadow.swift in Sources */,
 				12402A14214F6EE300D2EC6B /* InputField.swift in Sources */,
 				12986DDE2172DEA00075B8C0 /* EventDetailViewController.swift in Sources */,
 				1204245B21588F17004277D7 /* UIView+Identifier.swift in Sources */,

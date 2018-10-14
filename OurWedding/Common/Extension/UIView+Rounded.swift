@@ -11,8 +11,7 @@ import UIKit
 extension UIView {
     
     func rounded(value: CGFloat) {
-        // TODO: Fix
-        self.clipsToBounds = true
+        self.layer.masksToBounds = true
         self.layer.cornerRadius = value
     }
     

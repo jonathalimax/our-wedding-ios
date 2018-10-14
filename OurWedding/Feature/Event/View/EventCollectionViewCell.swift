@@ -54,10 +54,10 @@ class EventCollectionViewCell: UICollectionViewCell {
 extension EventCollectionViewCell: ViewCodingProtocol {
     
     func addSubviews() {
-        addSubview(backgroundImageView)
-        addSubview(titleLabel)
-        addSubview(descriptionLabel)
-        addSubview(dateLabel)
+        contentView.addSubview(backgroundImageView)
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(descriptionLabel)
+        contentView.addSubview(dateLabel)
     }
     
     func setupConstraints() {
@@ -87,8 +87,9 @@ extension EventCollectionViewCell: ViewCodingProtocol {
     }
     
     func setupSubviews() {
-        self.backgroundColor = Resource.Color.white
-        self.rounded(value: 8)
+        self.backgroundColor = .clear
+        self.contentView.rounded(value: 10)
+        
         dateLabel.text = "26 Outubro 2018"
         titleLabel.text = "Mayara & Diego"
         descriptionLabel.text = """
@@ -96,6 +97,12 @@ extension EventCollectionViewCell: ViewCodingProtocol {
             Integer aliquet elit in justo dapibus sodales.
             """
         backgroundImageView.image = UIImage(named: "wedding")
+        
+        self.addShadow(configuration:
+            .init(opacity: 0.5,
+                  offset: CGSize(width: 2, height: 6),
+                  radius: 8))
+
     }
     
 }
