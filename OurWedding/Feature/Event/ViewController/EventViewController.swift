@@ -7,11 +7,17 @@
 //
 
 import UIKit
-import SnapKit
+
+protocol EventViewControllerDelegate: class {
+    func eventViewController(_ viewController: EventViewController,
+                             didSelectEvent event: Int)
+}
 
 class EventViewController: UIViewController {
     
-    private var eventViewScreen: EventViewScreen
+    private let eventViewScreen: EventViewScreen
+    
+    weak var delegate: EventViewControllerDelegate?
     
     init() {
         eventViewScreen = EventViewScreen()
@@ -49,3 +55,14 @@ extension EventViewController {
     }
     
 }
+
+//extension EventViewController: UICollectionViewDelegate {
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//        delegate?.eventViewController(self,
+//                                      didSelectEvent: indexPath.row)
+//
+//    }
+//
+//}

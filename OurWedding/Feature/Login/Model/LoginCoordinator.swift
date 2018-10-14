@@ -8,15 +8,23 @@
 
 import UIKit
 
+protocol LoginCoordinatorDelegate: class {
+    func loginCoordinatorDidFinish(_ coordinator: LoginCoordinator)
+}
+
 class LoginCoordinator: Coordinator {
     
     enum Destination {
         case login
     }
     
+    var children: [Coordinator]
+    weak var delegate: LoginCoordinatorDelegate?
+    
     let window: UIWindow
     
     init(window: UIWindow) {
+        children = []
         self.window = window
     }
     
@@ -40,22 +48,10 @@ class LoginCoordinator: Coordinator {
     
 }
 
-extension LoginCoordinator {
-    
-    private func startEventCoordinator() {
-        let eventNavigationController = NavigationController(rootViewController: EventViewController())
-        let controllers = [eventNavigationController, UIViewController(), UIViewController()]
-        let coordinator = EventCoordinator(window: window,
-                                          controllers: controllers)
-        coordinator.start()
-    }
-    
-}
-
 extension LoginCoordinator: LoginViewControllerDelegate {
     
     func loginViewControllerLogInSuccessfully(_ viewController: LoginViewController) {
-        startEventCoordinator()
+        delegate?.loginCoordinatorDidFinish(self)
     }
     
 }

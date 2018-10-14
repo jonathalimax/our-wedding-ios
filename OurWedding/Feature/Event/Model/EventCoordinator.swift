@@ -8,26 +8,36 @@
 
 import UIKit
 
+protocol EventCoordinatorDelegate: class {
+    func eventCoordinatorDidFinish(_ coordinator: EventCoordinator)
+}
+
 class EventCoordinator: Coordinator {
     
     enum Destination {
-        case events
+        case detail
     }
     
-    var window: UIWindow
-    var tabBarController: UITabBarController
+    var children: [Coordinator]
+    weak var delegate: EventCoordinatorDelegate?
     
-    init(window: UIWindow,
-         controllers: [UIViewController]) {
-        self.window = window
-        tabBarController = UITabBarController(nibName: nil, bundle: nil)
-        tabBarController.viewControllers = controllers
-        tabBarController.tabBar.tintColor = Resource.Color.black
+    private let tabBarController: UITabBarController
+    
+    init(tabBarController: UITabBarController) {
+        children = []
+        self.tabBarController = tabBarController
     }
     
     func start() {
-        self.window.rootViewController = self.tabBarController
-        self.window.makeKeyAndVisibleAnimated()
+        guard let viewControllers = tabBarController.viewControllers else {
+            return
+        }
+        for (index, controller) in viewControllers.enumerated() {
+            if controller.isKind(of: EventViewController.self) {
+                tabBarController.selectedIndex = index
+                return
+            }
+        }
     }
     
 }
