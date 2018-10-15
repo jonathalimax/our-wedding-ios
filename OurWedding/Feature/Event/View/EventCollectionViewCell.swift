@@ -99,8 +99,8 @@ extension EventCollectionViewCell: ViewCodingProtocol {
         backgroundImageView.image = UIImage(named: "wedding")
         
         self.addShadow(configuration:
-            .init(opacity: 0.5,
-                  offset: CGSize(width: 2, height: 6),
+            .init(opacity: 0.3,
+                  offset: CGSize(width: 0, height: 4),
                   radius: 8))
 
     }
