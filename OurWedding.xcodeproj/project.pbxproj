@@ -40,6 +40,7 @@
 		1257030D217B8E58002042B0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
 		12570311217BA8E9002042B0 /* MatchSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570310217BA8E9002042B0 /* MatchSnapshot.swift */; };
 		12570315217BAB36002042B0 /* EventCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570314217BAB36002042B0 /* EventCollectionViewCellSpec.swift */; };
+		12570319217BAD43002042B0 /* LoginViewScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570318217BAD43002042B0 /* LoginViewScreenSpec.swift */; };
 		12986DDA2172D8310075B8C0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DD92172D8310075B8C0 /* EventViewController.swift */; };
 		12986DDC2172D93D0075B8C0 /* EventDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */; };
 		12986DDE2172DEA00075B8C0 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */; };
@@ -107,6 +108,7 @@
 		12570308217B8E31002042B0 /* EventViewScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreenSpec.swift; sourceTree = "<group>"; };
 		12570310217BA8E9002042B0 /* MatchSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSnapshot.swift; sourceTree = "<group>"; };
 		12570314217BAB36002042B0 /* EventCollectionViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCellSpec.swift; sourceTree = "<group>"; };
+		12570318217BAD43002042B0 /* LoginViewScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreenSpec.swift; sourceTree = "<group>"; };
 		12986DD92172D8310075B8C0 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailScreen.swift; sourceTree = "<group>"; };
 		12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				12570306217B8E01002042B0 /* Event */,
+				12570316217BACF0002042B0 /* Login */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -382,6 +385,22 @@
 				12570310217BA8E9002042B0 /* MatchSnapshot.swift */,
 			);
 			path = OurWeddingTestsResources;
+			sourceTree = "<group>";
+		};
+		12570316217BACF0002042B0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				12570317217BAD35002042B0 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		12570317217BAD35002042B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12570318217BAD43002042B0 /* LoginViewScreenSpec.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		12B0FF6321533CFF00408D04 /* View */ = {
@@ -677,6 +696,7 @@
 				12570315217BAB36002042B0 /* EventCollectionViewCellSpec.swift in Sources */,
 				12570309217B8E31002042B0 /* EventViewScreenSpec.swift in Sources */,
 				12570311217BA8E9002042B0 /* MatchSnapshot.swift in Sources */,
+				12570319217BAD43002042B0 /* LoginViewScreenSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
