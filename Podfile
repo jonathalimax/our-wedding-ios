@@ -8,8 +8,7 @@ target 'OurWedding' do
   # Pods for OurWedding
   pod "VMaskTextField"
 
-
-  target 'OurWeddingUITests' do
+  target 'OurWeddingTests' do
     inherit! :search_paths
     # Pods for testing
   end

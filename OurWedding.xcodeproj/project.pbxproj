@@ -32,6 +32,14 @@
 		1238394B21604E0100274FA7 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1238394A21604E0100274FA7 /* UIView+SafeArea.swift */; };
 		12402A14214F6EE300D2EC6B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A13214F6EE300D2EC6B /* InputField.swift */; };
 		12402A16214F73C100D2EC6B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12402A15214F73C100D2EC6B /* Button.swift */; };
+		12570304217B8DE9002042B0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12570302217B8DE9002042B0 /* Info.plist */; };
+		12570309217B8E31002042B0 /* EventViewScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570308217B8E31002042B0 /* EventViewScreenSpec.swift */; };
+		1257030A217B8E58002042B0 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12402A09214F6A2300D2EC6B /* FBSnapshotTestCase.framework */; };
+		1257030B217B8E58002042B0 /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121AF17D2151FC6A00967078 /* Nimble_Snapshots.framework */; };
+		1257030C217B8E58002042B0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A78214F5CA800174E56 /* Nimble.framework */; };
+		1257030D217B8E58002042B0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7A214F5CA800174E56 /* Quick.framework */; };
+		12570311217BA8E9002042B0 /* MatchSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570310217BA8E9002042B0 /* MatchSnapshot.swift */; };
+		12570315217BAB36002042B0 /* EventCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12570314217BAB36002042B0 /* EventCollectionViewCellSpec.swift */; };
 		12986DDA2172D8310075B8C0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DD92172D8310075B8C0 /* EventViewController.swift */; };
 		12986DDC2172D93D0075B8C0 /* EventDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */; };
 		12986DDE2172DEA00075B8C0 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */; };
@@ -48,6 +56,16 @@
 		12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */; };
 		DB6655C94A1656A5D6553CB9 /* Pods_OurWedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A123B0A335EA0333B82E1122 /* Pods_OurWedding.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		125702FB217B8DD4002042B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12054A36214F4E7F00174E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12054A3D214F4E7F00174E56;
+			remoteInfo = OurWedding;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1204245A21588F17004277D7 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
@@ -84,6 +102,11 @@
 		12402A0B214F6B9200D2EC6B /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		12402A13214F6EE300D2EC6B /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		12402A15214F73C100D2EC6B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		125702F6217B8DD4002042B0 /* OurWeddingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurWeddingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12570302217B8DE9002042B0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12570308217B8E31002042B0 /* EventViewScreenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreenSpec.swift; sourceTree = "<group>"; };
+		12570310217BA8E9002042B0 /* MatchSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSnapshot.swift; sourceTree = "<group>"; };
+		12570314217BAB36002042B0 /* EventCollectionViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCellSpec.swift; sourceTree = "<group>"; };
 		12986DD92172D8310075B8C0 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		12986DDB2172D93D0075B8C0 /* EventDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailScreen.swift; sourceTree = "<group>"; };
 		12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -99,9 +122,12 @@
 		12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1E26330051FE2CE068682A80 /* Pods-OurWedding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWedding.release.xcconfig"; path = "Pods/Target Support Files/Pods-OurWedding/Pods-OurWedding.release.xcconfig"; sourceTree = "<group>"; };
 		2F649C317772E4FD719C8F34 /* Pods_OurWeddingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurWeddingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E6DAE518767BCD1CAD9D9F /* Pods_OurWeddingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurWeddingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48092FBD7E5E8AF18AA8BE18 /* Pods-OurWeddingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWeddingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OurWeddingUITests/Pods-OurWeddingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A123B0A335EA0333B82E1122 /* Pods_OurWedding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurWedding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF95E17C592980FB4D78A3C /* Pods-OurWeddingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWeddingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OurWeddingTests/Pods-OurWeddingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDC6B2591E73C6B78C1112F9 /* Pods-OurWeddingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWeddingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OurWeddingUITests/Pods-OurWeddingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC0262F1C811C5C0C994E24C /* Pods-OurWeddingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWeddingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OurWeddingTests/Pods-OurWeddingTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC02FFDA9726F215A1F3AF05 /* Pods-OurWedding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWedding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OurWedding/Pods-OurWedding.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +143,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		125702F3217B8DD4002042B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1257030A217B8E58002042B0 /* FBSnapshotTestCase.framework in Frameworks */,
+				1257030B217B8E58002042B0 /* Nimble_Snapshots.framework in Frameworks */,
+				1257030C217B8E58002042B0 /* Nimble.framework in Frameworks */,
+				1257030D217B8E58002042B0 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				12054A40214F4E7F00174E56 /* OurWedding */,
+				12570300217B8DE9002042B0 /* OurWeddingTests */,
+				12570313217BAAAB002042B0 /* OurWeddingTestsResources */,
 				12054A3F214F4E7F00174E56 /* Products */,
 				12054A76214F5CA800174E56 /* Frameworks */,
 				70F62D4AFA83803F916F76CD /* Pods */,
@@ -134,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				12054A3E214F4E7F00174E56 /* OurWedding.app */,
+				125702F6217B8DD4002042B0 /* OurWeddingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +288,7 @@
 				12054A77214F5CA800174E56 /* SnapKit.framework */,
 				A123B0A335EA0333B82E1122 /* Pods_OurWedding.framework */,
 				2F649C317772E4FD719C8F34 /* Pods_OurWeddingUITests.framework */,
+				47E6DAE518767BCD1CAD9D9F /* Pods_OurWeddingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,6 +340,48 @@
 				12402A15214F73C100D2EC6B /* Button.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		12570300217B8DE9002042B0 /* OurWeddingTests */ = {
+			isa = PBXGroup;
+			children = (
+				12570305217B8DFC002042B0 /* Feature */,
+				12570302217B8DE9002042B0 /* Info.plist */,
+			);
+			path = OurWeddingTests;
+			sourceTree = "<group>";
+		};
+		12570305217B8DFC002042B0 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				12570306217B8E01002042B0 /* Event */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		12570306217B8E01002042B0 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				12570307217B8E07002042B0 /* View */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		12570307217B8E07002042B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12570308217B8E31002042B0 /* EventViewScreenSpec.swift */,
+				12570314217BAB36002042B0 /* EventCollectionViewCellSpec.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12570313217BAAAB002042B0 /* OurWeddingTestsResources */ = {
+			isa = PBXGroup;
+			children = (
+				12570310217BA8E9002042B0 /* MatchSnapshot.swift */,
+			);
+			path = OurWeddingTestsResources;
 			sourceTree = "<group>";
 		};
 		12B0FF6321533CFF00408D04 /* View */ = {
@@ -359,6 +442,8 @@
 				1E26330051FE2CE068682A80 /* Pods-OurWedding.release.xcconfig */,
 				48092FBD7E5E8AF18AA8BE18 /* Pods-OurWeddingUITests.debug.xcconfig */,
 				CDC6B2591E73C6B78C1112F9 /* Pods-OurWeddingUITests.release.xcconfig */,
+				BDF95E17C592980FB4D78A3C /* Pods-OurWeddingTests.debug.xcconfig */,
+				DC0262F1C811C5C0C994E24C /* Pods-OurWeddingTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -386,19 +471,43 @@
 			productReference = 12054A3E214F4E7F00174E56 /* OurWedding.app */;
 			productType = "com.apple.product-type.application";
 		};
+		125702F5217B8DD4002042B0 /* OurWeddingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125702FD217B8DD4002042B0 /* Build configuration list for PBXNativeTarget "OurWeddingTests" */;
+			buildPhases = (
+				125702F2217B8DD4002042B0 /* Sources */,
+				125702F3217B8DD4002042B0 /* Frameworks */,
+				125702F4217B8DD4002042B0 /* Resources */,
+				1257030E217B8E6C002042B0 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125702FC217B8DD4002042B0 /* PBXTargetDependency */,
+			);
+			name = OurWeddingTests;
+			productName = OurWeddingTests;
+			productReference = 125702F6217B8DD4002042B0 /* OurWeddingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		12054A36214F4E7F00174E56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Sunshine Consulting";
 				TargetAttributes = {
 					12054A3D214F4E7F00174E56 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+					};
+					125702F5217B8DD4002042B0 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 12054A3D214F4E7F00174E56;
 					};
 				};
 			};
@@ -416,6 +525,7 @@
 			projectRoot = "";
 			targets = (
 				12054A3D214F4E7F00174E56 /* OurWedding */,
+				125702F5217B8DD4002042B0 /* OurWeddingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,6 +541,14 @@
 				121AF17C2151F1B900967078 /* SourceSansPro-SemiBold.ttf in Resources */,
 				12054A49214F4E8100174E56 /* Assets.xcassets in Resources */,
 				121AF17A2151F1B900967078 /* SourceSansPro-Bold.ttf in Resources */,
+				12570304217B8DE9002042B0 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125702F4217B8DD4002042B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +566,28 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		1257030E217B8E6C002042B0 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble_Snapshots.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,7 +670,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		125702F2217B8DD4002042B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12570315217BAB36002042B0 /* EventCollectionViewCellSpec.swift in Sources */,
+				12570309217B8E31002042B0 /* EventViewScreenSpec.swift in Sources */,
+				12570311217BA8E9002042B0 /* MatchSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		125702FC217B8DD4002042B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12054A3D214F4E7F00174E56 /* OurWedding */;
+			targetProxy = 125702FB217B8DD4002042B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12054A4A214F4E8100174E56 /* LaunchScreen.storyboard */ = {
@@ -704,6 +862,62 @@
 			};
 			name = Release;
 		};
+		125702FE217B8DD4002042B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S34WA7GG8R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OurWeddingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWeddingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OurWedding.app/OurWedding";
+			};
+			name = Debug;
+		};
+		125702FF217B8DD4002042B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S34WA7GG8R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = OurWeddingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sunshine.consulting.com.OurWeddingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OurWedding.app/OurWedding";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -721,6 +935,15 @@
 			buildConfigurations = (
 				12054A5C214F4E8100174E56 /* Debug */,
 				12054A5D214F4E8100174E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125702FD217B8DD4002042B0 /* Build configuration list for PBXNativeTarget "OurWeddingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125702FE217B8DD4002042B0 /* Debug */,
+				125702FF217B8DD4002042B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
