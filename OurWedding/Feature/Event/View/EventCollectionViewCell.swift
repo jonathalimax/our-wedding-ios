@@ -96,7 +96,7 @@ extension EventCollectionViewCell: ViewCodingProtocol {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
             Integer aliquet elit in justo dapibus sodales.
             """
-        backgroundImageView.image = UIImage(named: "wedding")
+        backgroundImageView.image = Resource.Image.weddingBackground
         
         self.addShadow(configuration:
             .init(opacity: 0.3,

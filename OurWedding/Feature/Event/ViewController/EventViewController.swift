@@ -44,7 +44,7 @@ extension EventViewController {
     
     private func prepare() {
         
-        let title = "Eventos"
+        let title = "Casamentos"
         self.title = title
         
         self.eventViewScreen.datasource?.delegate = self

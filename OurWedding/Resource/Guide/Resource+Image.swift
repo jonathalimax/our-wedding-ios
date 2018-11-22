@@ -11,11 +11,13 @@ import UIKit
 extension Resource.Image {
     
     static let user = Resource.Image.getImage(named: "user")
+    static let guest = Resource.Image.getImage(named: "guest")
     static let calendar = Resource.Image.getImage(named: "calendar")
     static let arrowRight = Resource.Image.getImage(named: "arrow_right")
     
     // TODO: Temporary
     static let harveyProfile = Resource.Image.getImage(named: "harvey_image")
+    static let weddingBackground = Resource.Image.getImage(named: "wedding")
     
 }
 
