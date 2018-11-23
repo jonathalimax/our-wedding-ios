@@ -26,7 +26,9 @@ class EventDetailScreen: UIView {
     init() {
         super.init(frame: .zero)
         self.datasource = TableViewDatasource(tableView: tableView)
-        self.datasource?.items = ["Noivos", "Local", "Padrinhos"]
+        self.datasource?.items = (data: ["Noivos", "Locais", "Padrinhos", "Presentes"],
+                                  configuration: .init(accessoryType: .disclosureIndicator,
+                                                       selectionStyle: .none))
         setupViewCode()
     }
     

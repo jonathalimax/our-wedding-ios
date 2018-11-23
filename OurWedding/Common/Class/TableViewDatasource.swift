@@ -14,7 +14,7 @@ protocol TableViewDatasourceDelegate: class {
 
 class TableViewDatasource<T: UITableViewCell>: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    var items: [Any] {
+    var items: (data: [Any], configuration: UITableViewCell.Configuration?) {
         didSet {
             tableView.reloadData()
         }
@@ -24,7 +24,7 @@ class TableViewDatasource<T: UITableViewCell>: NSObject, UITableViewDataSource, 
     private var tableView: UITableView
     
     init(tableView: UITableView) {
-        self.items = []
+        self.items = ([], nil)
         self.tableView = tableView
         super.init()
         registerCell(tableView: tableView)
@@ -38,7 +38,7 @@ class TableViewDatasource<T: UITableViewCell>: NSObject, UITableViewDataSource, 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return items.count
+        return items.data.count
     }
     
     func tableView(_ tableView: UITableView,
@@ -48,7 +48,8 @@ class TableViewDatasource<T: UITableViewCell>: NSObject, UITableViewDataSource, 
             fatalError("\(T.identifier) not found")
         }
         
-        cell.prepare(item: items[indexPath.row])
+        cell.prepare(item: items.data[indexPath.row],
+                     configuration: items.configuration)
         
         return cell
     }
@@ -56,7 +57,7 @@ class TableViewDatasource<T: UITableViewCell>: NSObject, UITableViewDataSource, 
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         
-        let item = items[indexPath.row]
+        let item = items.data[indexPath.row]
         delegate?.tableViewDatasourceDidSelecteItem(item: item)
     }
     
