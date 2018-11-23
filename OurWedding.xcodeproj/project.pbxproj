@@ -355,6 +355,7 @@
 		12570300217B8DE9002042B0 /* OurWeddingTests */ = {
 			isa = PBXGroup;
 			children = (
+				12B4AE7E21A78B6E00A25F1C /* Common */,
 				12570305217B8DFC002042B0 /* Feature */,
 				12570302217B8DE9002042B0 /* Info.plist */,
 			);
@@ -444,6 +445,13 @@
 				12986DDD2172DEA00075B8C0 /* EventDetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		12B4AE7E21A78B6E00A25F1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		12CE3C412152073100AEFE79 /* Event */ = {

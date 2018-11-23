@@ -82,7 +82,7 @@ extension LoginViewScreen: ViewCodingProtocol {
     func setupConstraints() {
         
         welcomeStackView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(122)
+            make.top.lessThanOrEqualToSuperview().offset(122)
             make.left.equalToSuperview().offset(38)
             make.right.equalToSuperview().inset(38)
         }
@@ -93,16 +93,16 @@ extension LoginViewScreen: ViewCodingProtocol {
             make.right.equalToSuperview()
             make.height.equalTo(65)
             make.top.greaterThanOrEqualTo(welcomeStackView.snp.bottom)
-                .offset(8)
+                .offset(26)
         }
         
         continueButton.snp.makeConstraints { make in
             make.width.equalTo(200)
-            make.height.equalTo(60).priority(1)
+            make.height.equalTo(60)
             make.left.equalToSuperview().offset(38)
             make.bottom.equalToSuperview().inset(self.bottomInset)
             make.top.greaterThanOrEqualTo(phoneNumberField.snp.bottom)
-                .offset(26)
+                .offset(32)
         }
         
     }

@@ -27,7 +27,7 @@ class EventHeaderTableViewCellSpec: QuickSpec {
             context("when initialized", {
                 
                 it("should be equal to snapshot", closure: {
-                    expect(sut).to(matchSnapshot(named: EventHeaderTableViewCell.identifier, record: true))
+                    expect(sut).to(matchSnapshot(named: EventHeaderTableViewCell.identifier))
                 })
                 
             })
