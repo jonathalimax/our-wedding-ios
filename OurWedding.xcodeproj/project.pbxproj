@@ -52,6 +52,8 @@
 		12B0FF6521533D1900408D04 /* EventViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6421533D1900408D04 /* EventViewScreen.swift */; };
 		12B0FF682153427300408D04 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF672153427300408D04 /* UIView+Rounded.swift */; };
 		12B0FF6F2154511600408D04 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */; };
+		12B4AE7B21A77E2E00A25F1C /* KeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B4AE7A21A77E2E00A25F1C /* KeyboardListener.swift */; };
+		12B4AE7D21A783F400A25F1C /* Notification+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B4AE7C21A783F400A25F1C /* Notification+Keyboard.swift */; };
 		12CE3C3F2152011F00AEFE79 /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054A6A214F574D00174E56 /* LoginViewScreen.swift */; };
 		12CE3C40215201B100AEFE79 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12054A7B214F5CA800174E56 /* Alamofire.framework */; };
 		12CE3C462152077500AEFE79 /* EventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE3C452152077500AEFE79 /* EventCoordinator.swift */; };
@@ -123,6 +125,8 @@
 		12B0FF6421533D1900408D04 /* EventViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewScreen.swift; sourceTree = "<group>"; };
 		12B0FF672153427300408D04 /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
 		12B0FF6E2154511600408D04 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		12B4AE7A21A77E2E00A25F1C /* KeyboardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
+		12B4AE7C21A783F400A25F1C /* Notification+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Keyboard.swift"; sourceTree = "<group>"; };
 		12CE3C452152077500AEFE79 /* EventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoordinator.swift; sourceTree = "<group>"; };
 		12CE3C47215209FA00AEFE79 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1E26330051FE2CE068682A80 /* Pods-OurWedding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurWedding.release.xcconfig"; path = "Pods/Target Support Files/Pods-OurWedding/Pods-OurWedding.release.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +338,7 @@
 			children = (
 				1204245C21589620004277D7 /* NavigationController.swift */,
 				12986DE321739D1B0075B8C0 /* TableViewDatasource.swift */,
+				12B4AE7A21A77E2E00A25F1C /* KeyboardListener.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				1238394A21604E0100274FA7 /* UIView+SafeArea.swift */,
 				123839462160490C00274FA7 /* UIWindow+Transition.swift */,
 				12986DE72173DAA90075B8C0 /* UIView+Shadow.swift */,
+				12B4AE7C21A783F400A25F1C /* Notification+Keyboard.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -668,6 +674,7 @@
 				12986DE421739D1B0075B8C0 /* TableViewDatasource.swift in Sources */,
 				12CE3C462152077500AEFE79 /* EventCoordinator.swift in Sources */,
 				12054A88214F610500174E56 /* Resource+Color.swift in Sources */,
+				12B4AE7B21A77E2E00A25F1C /* KeyboardListener.swift in Sources */,
 				1257031B217BB021002042B0 /* EventHeaderTableViewCell.swift in Sources */,
 				12054A71214F598100174E56 /* CoordinatorProtocol.swift in Sources */,
 				12054A6F214F584600174E56 /* AppCoordinator.swift in Sources */,
@@ -686,6 +693,7 @@
 				12054A8A214F610D00174E56 /* Resource+Font.swift in Sources */,
 				12986DE62173A66E0075B8C0 /* UITableViewCell+Prepare.swift in Sources */,
 				12054A6D214F575900174E56 /* LoginCoordinator.swift in Sources */,
+				12B4AE7D21A783F400A25F1C /* Notification+Keyboard.swift in Sources */,
 				12986DE0217387330075B8C0 /* EventDatasource.swift in Sources */,
 				12CE3C48215209FA00AEFE79 /* LoginViewControllerDelegate.swift in Sources */,
 				12054A42214F4E7F00174E56 /* AppDelegate.swift in Sources */,

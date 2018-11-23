@@ -35,5 +35,27 @@ class LoginViewController: UIViewController {
             self.delegate?.loginViewControllerLogInSuccessfully(self)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        KeyboardListener.shared.register(self)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        KeyboardListener.shared.remove(self)
+    }
 
+}
+
+extension LoginViewController: KeyboardListenerDelegate {
+    
+    func keyboardListenerWillAppear(_ info: KeyboardListener.Info) {
+        loginViewScreen.handleUI(keyboardHeight: info.height)
+    }
+    
+    func keyboardListenerWillDisappear(_ info: KeyboardListener.Info) {
+        loginViewScreen.handleUI(keyboardHeight: info.height)
+    }
+    
 }

@@ -12,6 +12,8 @@ class LoginViewScreen: UIView {
 
     var onLoginTap: (() -> Void)?
     
+    private let bottomInset: CGFloat = 50.0
+    
     lazy var welcomeStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -86,7 +88,7 @@ extension LoginViewScreen: ViewCodingProtocol {
         }
         
         phoneNumberField.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+            make.centerY.equalToSuperview().priority(1)
             make.left.equalToSuperview().offset(38)
             make.right.equalToSuperview()
             make.height.equalTo(65)
@@ -96,11 +98,11 @@ extension LoginViewScreen: ViewCodingProtocol {
         
         continueButton.snp.makeConstraints { make in
             make.width.equalTo(200)
-            make.height.equalTo(60)
+            make.height.equalTo(60).priority(1)
             make.left.equalToSuperview().offset(38)
-            make.bottom.equalToSuperview().inset(50)
+            make.bottom.equalToSuperview().inset(self.bottomInset)
             make.top.greaterThanOrEqualTo(phoneNumberField.snp.bottom)
-                .offset(8)
+                .offset(26)
         }
         
     }
@@ -119,6 +121,18 @@ extension LoginViewScreen {
     @objc
     private func onLoginAction() {
         onLoginTap?()
+    }
+    
+    public func handleUI(keyboardHeight: CGFloat) {
+        
+        let bottomInset = self.bottomInset + keyboardHeight
+        
+        continueButton.snp.updateConstraints { update in
+            update.bottom.equalToSuperview().inset(bottomInset)
+        }
+        
+        self.layoutIfNeeded()
+        
     }
     
 }
